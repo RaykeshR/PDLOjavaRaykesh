@@ -9,7 +9,7 @@ public class Annuaire {
     //private Hashtable<String, Personne> P = new Hashtable<>();// Dictionary<String, Personne>
     private HashMap<String, Personne> P ;//= new HashMap<String, Personne>();
 
-
+    //Constructeurs : 
     public Annuaire (){
         this.P = new HashMap<String, Personne>();
     }

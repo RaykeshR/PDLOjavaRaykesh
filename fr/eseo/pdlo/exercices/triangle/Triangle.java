@@ -33,7 +33,31 @@ public class Triangle {
             return TriangleType.SCALENE;
         }
     }
-    public String toString(){
+    public TriangleType getType_deLaProf(){
+        TriangleType triangle = TriangleType.NON_TRIANGLE;
+        boolean estTriangle = ( getCoteA() <= getCoteC() + getCoteB());
+        if (estTriangle && coteA != 0) {
+            //
+            if ((getCoteA() == getCoteB()) && (getCoteB() == getCoteC())) {
+                triangle = TriangleType.EQUILATERAL;
+            } else if (((this.coteA == this.coteB) || (this.coteA == this.coteC) || (this.coteB == this.coteC))) {
+                triangle = TriangleType.ISOCELE;
+            } else {
+                triangle = TriangleType.SCALENE;
+            }
+        }
+        return triangle;
+    }
+    @Override
+    public String toString() {
+        return this.getType().equals(TriangleType.NON_TRIANGLE) ? " Ceci n’est pas un triangle. " : " Triangle " + this.getType();
+    }
+    
+    public String toString3() {
+        TriangleType triangle = this.getType();
+        return triangle.equals(TriangleType.NON_TRIANGLE) ? " Ceci n’est pas un triangle. " : " Triangle " + triangle;
+    }
+    public String toString2(){
         return "Triangle : "+getType().toString();
     }
 }

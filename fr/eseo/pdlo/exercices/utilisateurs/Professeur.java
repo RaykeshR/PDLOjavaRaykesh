@@ -12,7 +12,7 @@ public class Professeur extends Personne{
 		super(prenom,nom,nationalite,anneeDeNaissance);
         cours =new ArrayList<String>();
 	}
-	public Professeur(String prenom, String nom){}
+	public Professeur(String prenom, String nom){cours =new ArrayList<String>();}
 	public void ajouterCours (String cours) {this.cours.add(cours);}
 	//public ArrayList<Personne> getCours() {return L;}
 	public ArrayList<String> getCours() {return cours;}
@@ -22,7 +22,7 @@ public class Professeur extends Personne{
 	}
 	@Override
 	public String toString() {
-		return "Professeur []";
+		return "Professeur "+cours;
 	}
 	
 	//public void setL(ArrayList<Personne> l) {cours = l;}

@@ -17,4 +17,11 @@ public class Annuaire {
     public Personne chercher  (String nom){return P.get(nom);}
     public Personne supprimer (String nom){return P.remove(nom);}
     public String toString(){return P.toString();}
+    public Personne[] versTableau() {
+        Personne[] P2 = new Personne[P.size()];
+        int i = 0;
+        for (Personne x : P.values()) {
+            P2[i++] = x;
+        }return P2;
+    }
 }

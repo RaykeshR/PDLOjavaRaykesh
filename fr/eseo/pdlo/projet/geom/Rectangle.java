@@ -49,6 +49,7 @@ public class Rectangle {
     public String toString1(){  
     	return "Rectangle: \u001B[31m{\u001B[30mPosition= ("+position.getX()+", "+position.getY()+")\u001B[0m, largeur=" + largeur + ", hauteur=" + hauteur + "\u001B[31m}\u001B[0m";
     }
+    @Override
     public String toString(){  
     	//return "["+super.toString()+"] \u001B[31m{\u001B[30mpos : ("+position.getX()+", "+position.getY()+")\u001B[0m dim : " + largeur + " x " + hauteur + "\u001B[31m}\u001B[0m périmètre : "+perimetre()+" aire : "+aire();
     	//return "["+super.getClass()+"] \u001B[31m{\u001B[30mpos : ("+position.getX()+", "+position.getY()+")\u001B[0m dim : " + largeur + " x " + hauteur + "\u001B[31m}\u001B[0m périmètre : "+perimetre()+" aire : "+aire();

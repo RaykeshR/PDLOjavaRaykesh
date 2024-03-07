@@ -74,7 +74,7 @@ public abstract class Forme {
 	
 	public double getMaxX() {return (getX() + getLargeur());}
     public double getMaxY() {return (getY() + getHauteur());}
-    public double getMinX() {return (getY());}
+    public double getMinX() {return (getX());}
     public double getMinY() {return getY();}
 		
 		

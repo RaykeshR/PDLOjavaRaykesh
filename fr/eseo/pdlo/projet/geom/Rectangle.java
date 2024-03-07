@@ -1,6 +1,6 @@
 package fr.eseo.pdlo.projet.geom;
 
-public class Rectangle {
+public class Rectangle extends Forme{
 	// Constantes de classe
     static final double LARGEUR_PAR_DEFAUT = 100;
     static final double HAUTEUR_PAR_DEFAUT = 100;
